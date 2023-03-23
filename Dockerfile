@@ -25,6 +25,7 @@ RUN adduser --home /usr/share/samba4-manager/ \
     musl-dev \
     openldap-dev \
  && pip install --no-cache-dir -r requirements.txt \
+ && pip install --no-cache-dir WTForms==2.3.3 \
  && apk del .build-deps
 
 VOLUME /etc/samba4-manager
